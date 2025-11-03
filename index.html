@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Building Digital Empires That Dominate - We Turn Your Vision Into a Digital Powerhouse with Custom Web Development, AI-Powered Automation, and Scalable Cloud Solutions.">
+    <meta name="keywords" content="web development, AI automation, cloud solutions, digital transformation">
+    <meta name="author" content="Dormache Empire">
+    <title>Dormache Empire - Building Digital Empires That Dominate</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        .gradient-text {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .glow-effect {
+            box-shadow: 0 0 30px rgba(102, 126, 234, 0.3);
+        }
+        
+        .hover-lift {
+            transition: all 0.3s ease;
+        }
+        
+        .hover-lift:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(102, 126, 234, 0.2);
+        }
+        
+        .feature-card {
+            background: linear-gradient(135deg, rgba(17, 24, 39, 0.8), rgba(31, 41, 55, 0.8));
+            border: 1px solid rgba(102, 126, 234, 0.2);
+            transition: all 0.3s ease;
+        }
+        
+        .feature-card:hover {
+            border-color: rgba(102, 126, 234, 0.5);
+            box-shadow: 0 0 30px rgba(102, 126, 234, 0.1);
+            transform: scale(1.02);
+        }
+        
+        .cta-button {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            transition: all 0.3s ease;
+        }
+        
+        .cta-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+        }
+        
+        .testimonial-card {
+            background: linear-gradient(135deg, rgba(17, 24, 39, 0.6), rgba(31, 41, 55, 0.6));
+            border: 1px solid rgba(102, 126, 234, 0.15);
+            transition: all 0.3s ease;
+        }
+        
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(102, 126, 234, 0.15);
+            border-color: rgba(102, 126, 234, 0.3);
+        }
+        
+        .faq-question {
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .faq-question:hover {
+            color: #667eea;
+        }
+        
+        .faq-icon {
+            transition: transform 0.3s ease;
+        }
+        
+        .faq-answer {
+            transition: all 0.3s ease;
+            max-height: 500px;
+            overflow: hidden;
+        }
+        
+        .faq-answer.hidden {
+            max-height: 0;
+            opacity: 0;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white">
+    <!-- Header & Navigation -->
+    <header class="sticky top-0 z-50 bg-gray-900 border-b border-gray-800">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <div class="w-10 h-10 bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg flex items-center justify-center">
+                    <i class="fas fa-crown text-white font-bold"></i>
+                </div>
+                <span class="text-xl font-bold gradient-text">Dormache Empire</span>
+            </div>
+            
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#features" class="text-gray-300 hover:text-white transition-colors duration-300">Features</a>
+                <a href="#benefits" class="text-gray-300 hover:text-white transition-colors duration-300">Benefits</a>
+                <a href="#testimonials" class="text-gray-300 hover:text-white transition-colors duration-300">Testimonials</a>
+                <a href="#faq" class="text-gray-300 hover:text-white transition-colors duration-300">FAQ</a>
+                <a href="#about" class="text-gray-300 hover:text-white transition-colors duration-300">About</a>
+            </div>
+            
+            <!-- CTA Button Desktop -->
+            <div class="hidden md:block">
+                <a href="https://dormacheempire.com/contact" class="cta-button px-6 py-2 rounded-lg text-white font-semibold">
+                    Get Started
+                </a>
+            </div>
+            
+            <!-- Mobile Menu Button -->
+            <button class="md:hidden mobile-menu-button p-2 rounded-lg hover:bg-gray-800 transition-colors duration-300">
+                <i class="fas fa-bars text-white text-xl"></i>
+            </button>
+            
+            <!-- Mobile Menu -->
+            <div class="mobile-menu hidden absolute top-16 left-0 right-0 bg-gray-800 border-b border-gray-700 md:hidden">
+                <div class="flex flex-col space-y-4 p-6">
+                    <a href="#features" class="text-gray-300 hover:text-white transition-colors duration-300">Features</a>
+                    <a href="#benefits" class="text-gray-300 hover:text-white transition-colors duration-300">Benefits</a>
+                    <a href="#testimonials" class="text-gray-300 hover:text-white transition-colors duration-300">Testimonials</a>
+                    <a href="#faq" class="text-gray-300 hover:text-white transition-colors duration-300">FAQ</a>
+                    <a href="#about" class="text-gray-300 hover:text-white transition-colors duration-300">About</a>
+                    <a href="https://dormacheempire.com/contact" class="cta-button px-6 py-2 rounded-lg text-white font-semibold text-center">
+                        Get Started
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center justify-center overflow-hidden bg-gray-900">
+        <!-- Animated Background Elements -->
+        <div class="absolute inset-0 overflow-hidden">
+            <div class="absolute -top-40 -right-40 w-80 h-80 bg-purple-600 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse"></div>
+            <div class="absolute -bottom-40 -left-40 w-80 h-80 bg-pink-600 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse" style="animation-delay: 2s;"></div>
+        </div>
+        
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center">
+            <h1 class="text-4xl sm:text-5xl lg:text-7xl font-bold tracking-tight mb-6 leading-tight">
+                <span class="block text-white">Building Digital</span>
+                <span class="gradient-text block">Empires That Dominate</span>
+            </h1>
+            
+            <p class="text-xl sm:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
+                We Turn Your Vision Into a Digital Powerhouse
+            </p>
+            
+            <p class="text-lg text-gray-400 mb-12 max-w-2xl mx-auto leading-relaxed">
+                Transform your business with cutting-edge technology solutions that scale. From custom web development to AI-powered automation, we deliver the digital infrastructure your empire needs to dominate the market.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <a href="https://dormacheempire.com/contact" class="cta-button px-8 py-4 rounded-lg text-white font-bold text-lg">
+                    Start Your Transformation
+                </a>
+                <button class="px-8 py-4 rounded-lg border-2 border-purple-500 text-purple-400 font-bold text-lg hover:bg-purple-500 hover:text-white transition-all duration-300">
+                    Watch Demo
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-24 bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl sm:text-5xl font-bold mb-4">Powerful Features That Drive Results</h2>
+                <p class="text-xl text-gray-400 max-w-2xl mx-auto">
+                    Comprehensive solutions designed to elevate your digital presence and streamline operations
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Feature 1: Custom Web Development -->
+                <div class="feature-card p-8 rounded-xl hover-lift">
+                    <div class="w-14 h-14 bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-code text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Custom Web Development</h3>
+                    <p class="text-gray-300 mb-4 leading-relaxed">
+                        Bespoke web solutions tailored to your unique business requirements. Our expert developers craft responsive, high-performance websites that convert visitors into customers with stunning design and seamless functionality.
+                    </p>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-center"><i class="fas fa-check text-purple-500 mr-3"></i>Responsive Design</li>
+                        <li class="flex items-center"><i class="fas fa-check text-purple-500 mr-3"></i>SEO Optimized</li>
+                        <li class="flex items-center"><i class="fas fa-check text-purple-500 mr-3"></i>Fast Loading</li>
+                    </ul>
+                </div>
+                
+                <!-- Feature 2: AI-Powered Automation -->
+                <div class="feature-card p-8 rounded-xl hover-lift">
+                    <div class="w-14 h-14 bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-brain text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">AI-Powered Automation</h3>
+                    <p class="text-gray-300 mb-4 leading-relaxed">
+                        Harness the power of artificial intelligence to automate complex processes and workflows. Reduce operational costs by up to 70% while increasing efficiency and allowing your team to focus on strategic initiatives that drive growth.
+                    </p>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-center"><i class="fas fa-check text-purple-500 mr-3"></i>Intelligent Workflows</li>
+                        <li class="flex items-center"><i class="fas fa-check text-purple-500 mr-3"></i>Cost Reduction</li>
+                        <li class="flex items-center"><i class="fas fa-check text-purple-500 mr-3"></i>24/7 Operations</li>
+                    </ul>
+                </div>
+                
+                <!-- Feature 3: Scalable Cloud Solutions -->
+                <div class="feature-card p-8 rounded-xl hover-lift">
+                    <div class="w-14 h-14 bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-cloud text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Scalable Cloud Solutions</h3>
+                    <p class="text-gray-300 mb-4 leading-relaxed">
+                        Enterprise-grade cloud infrastructure that grows with your business. Enjoy 99.99% uptime, unlimited scalability, and enterprise-level security without the complexity of managing your own servers.
+                    </p>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-center"><i class="fas fa-check text-purple-500 mr-3"></i>99.99% Uptime</li>
+                        <li class="flex items-center"><i class="fas fa-check text-purple-500 mr-3"></i>Auto Scaling</li>
+                        <li class="flex items-center"><i class="fas fa-check text-purple-500 mr-3"></i>Enterprise Security</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="py-24 bg-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl sm:text-5xl font-bold mb-4">Transform Your Business Today</h2>
+                <p class="text-xl text-gray-400 max-w-2xl mx-auto">
+                    Experience measurable growth and competitive advantage with our proven solutions
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Benefit 1: Boost Online Presence -->
+                <div class="bg-gradient-to-br from-gray-700 to-gray-800 p-8 rounded-xl border border-purple-500 border-opacity-20 hover:border-opacity-50 transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/20">
+                    <div class="flex items-start mb-6">
+                        <div class="w-12 h-12 bg-purple-500 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-rocket text-white text-xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold ml-4">Boost Your Online Presence</h3>
+                    </div>
+                    <p class="text-gray-300 leading-relaxed mb-4">
+                        Dominate search results and social media with our comprehensive digital marketing integration. Increase organic traffic by an average of 300% within the first six months through strategic SEO optimization, content marketing, and targeted advertising campaigns.
+                    </p>
+                    <div class="space-y-3">
+                        <p class="flex items-center text-gray-300"><i class="fas fa-star text-yellow-400 mr-3"></i>Increased brand visibility</p>
+                        <p class="flex items-center text-gray-300"><i class="fas fa-star text-yellow-400 mr-3"></i>Higher conversion rates</p>
+                        <p class="flex items-center text-gray-300"><i class="fas fa-star text-yellow-400 mr-3"></i>Improved customer engagement</p>
+                    </div>
+                </div>
+                
+                <!-- Benefit 2: Save Time with Automation -->
+                <div class="bg-gradient-to-br from-gray-700 to-gray-800 p-8 rounded-xl border border-purple-500 border-opacity-20 hover:border-opacity-50 transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/20">
+                    <div class="flex items-start mb-6">
+                        <div class="w-12 h-12 bg-purple-500 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-clock text-white text-xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold ml-4">Save Time with Automation</h3>
+                    </div>
+                    <p class="text-gray-300 leading-relaxed mb-4">
+                        Eliminate repetitive tasks and free up your team for high-value work. Automate customer service, data processing, and business workflows to reclaim an average of 20+ hours per week per employee. Our AI solutions handle routine operations 24/7 without human intervention.
+                    </p>
+                    <div class="space-y-3">
+                        <p class="flex items-center text-gray-300"><i class="fas fa-star text-yellow-400 mr-3"></i>Reduced manual work</p>
+                        <p class="flex items-center text-gray-300"><i class="fas fa-star text-yellow-400 mr-3"></i>Faster task completion</p>
+                        <p class="flex items-center text-gray-300"><i class="fas fa-star text-yellow-400 mr-3"></i>Fewer human errors</p>
+                    </div>
+                </div>
+                
+                <!-- Benefit 3: Accelerate Growth -->
+                <div class="bg-gradient-to-br from-gray-700 to-gray-800 p-8 rounded-xl border border-purple-500 border-opacity-20 hover:border-opacity-50 transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/20">
+                    <div class="flex items-start mb-6">
+                        <div class="w-12 h-12 bg-purple-500 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-chart-line text-white text-xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold ml-4">Accelerate Your Growth</h3>
+                    </div>
+                    <p class="text-gray-300 leading-relaxed mb-4">
+                        Scale your operations exponentially without proportional cost increases. Our scalable infrastructure and intelligent systems enable businesses to grow from startup to enterprise without infrastructure limitations, technical debt, or performance degradation.
+                    </p>
+                    <div class="space-y-3">
+                        <p class="flex items-center text-gray-300"><i class="fas fa-star text-yellow-400 mr-3"></i>Unlimited scalability</p>
+                        <p class="flex items-center text-gray-300"><i class="fas fa-star text-yellow-400 mr-3"></i>Cost-effective expansion</p>
+                        <p class="flex items-center text-gray-300"><i class="fas fa-star text-yellow-400 mr-3"></i>Market leadership</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section with Background -->
+    <section class="py-24 relative overflow-hidden">
+        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1200&q=80'); opacity: 0.15;"></div>
+        <div class="absolute inset-0 bg-gradient-to-r from-gray-900 via-gray-900 to-gray-900"></div>
+        
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">Ready to Dominate Your Market?</h2>
+            <p class="text-xl text-gray-300 mb-12 max-w-2xl mx-auto leading-relaxed">
+                Join hundreds of successful businesses that have transformed their operations and achieved exponential growth with our digital solutions.
+            </p>
+            <a href="https://dormacheempire.com/contact" class="cta-button inline-block px-10 py-4 rounded-lg text-white font-bold text-lg">
+                Schedule Your Free Consultation
+            </a>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-24 bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl sm:text-5xl font-bold mb-4">What Our Clients Say</h2>
+                <p class="text-xl text-gray-400 max-w-2xl mx-auto">
+                    Real results from real businesses that have transformed with our solutions
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card p-8 rounded-xl">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center">
+                            <span class="text-white font-bold">JM</span>
+                        </div>
+                        <div class="ml-4">
+                            <p class="font-bold text-white">James Mitchell</p>
+                            <p class="text-gray-400 text-sm">CEO, TechVenture Solutions</p>
+                        </div>
+                    </div>
+                    <div class="flex mb-4">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                    <p class="text-gray-300 leading-relaxed">
+                        "Dormache Empire completely transformed our digital infrastructure. Their custom web development solution increased our customer engagement by 250%, and the AI automation cut our operational costs by nearly 60%. The team was professional, responsive, and delivered beyond expectations. Highly recommended!"
+                    </p>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card p-8 rounded-xl">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center">
+                            <span class="text-white font-bold">SR</span>
+                        </div>
+                        <div class="ml-4">
+                            <p class="font-bold text-white">Sarah Rodriguez</p>
+                            <p class="text-gray-400 text-sm">Founder, Creative Collective Co.</p>
+                        </div>
+                    </div>
+                    <div class="flex mb-4">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                    <p class="text-gray-300 leading-relaxed">
+                        "Working with Dormache Empire was a game-changer for our agency. Their scalable cloud solutions enabled us to handle 5x more clients without infrastructure headaches. The platform is intuitive, reliable, and the support team is exceptional. Our revenue increased 180% in the first year!"
+                    </p>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card p-8 rounded-xl">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center">
+                            <span class="text-white font-bold">MK</span>
+                        </div>
+                        <div class="ml-4">
+                            <p class="font-bold text-white">Michael Kumar</p>
+                            <p class="text-gray-400 text-sm">Director of Operations, Global Retail Inc.</p>
+                        </div>
+                    </div>
+                    <div class="flex mb-4">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                    <p class="text-gray-300 leading-relaxed">
+                        "The AI-powered automation they implemented saved us over $500K annually by eliminating manual data entry and streamlining our inventory management. Their team understood our complex requirements and delivered a solution that perfectly fits our needs. Outstanding work!"
+                    </p>
+                </div>
+                
+                <!-- Testimonial 4 -->
+                <div class="testimonial-card p-8 rounded-xl">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center">
+                            <span class="text-white font-bold">EP</span>
+                        </div>
+                        <div class="ml-4">
+                            <p class="font-bold text-white">Emma Peterson</p>
+                            <p class="text-gray-400 text-sm">COO, StartupHub Ventures</p>
+                        </div>
+                    </div>
+                    <div class="flex mb-4">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                    <p class="text-gray-300 leading-relaxed">
+                        "From concept to launch, Dormache Empire was fantastic to work with. Their custom web development created a stunning platform that our investors loved. The scalable cloud infrastructure means we can grow without worrying about technical limitations. Truly exceptional service!"
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-24 bg-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl sm:text-5xl font-bold mb-4">About Dormache Empire</h2>
+                <p class="text-xl text-gray-400">Our story and mission</p>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <p class="text-lg text-gray-300 leading-relaxed mb-6">
+                        Founded in 2018 by a team of visionary technologists and entrepreneurs, Dormache Empire was born from a simple yet powerful vision: to democratize access to enterprise-grade digital solutions for businesses of all sizes. What started as a small boutique development agency has evolved into a comprehensive digital transformation powerhouse, serving over 500 clients across 30+ countries. Our founders recognized that too many businesses were being held back by outdated technology and limited access to cutting-edge solutions, so we set out to change that landscape forever.
+                    </p>
+                    <p class="text-lg text-gray-300 leading-relaxed">
+                        Today, our mission remains unwavering: to empower businesses to build digital empires that dominate their markets through innovative technology, strategic guidance, and unwavering support. We believe that success is built on three pillars—excellence in execution, deep customer partnerships, and continuous innovation. Our core values of integrity, transparency, and client-centricity guide every decision we make. We're not just a service provider; we're your strategic partner in digital transformation, committed to your long-term success and market leadership.
+                    </p>
+                </div>
+                
+                <div class="relative">
+                    <div class="absolute inset-0 bg-gradient-to-r from-purple-600 to-pink-600 rounded-xl opacity-20 blur-xl"></div>
+                    <div class="relative bg-gradient-to-br from-gray-700 to-gray-800 p-8 rounded-xl border border-purple-500 border-opacity-30">
+                        <div class="grid grid-cols-2 gap-6">
+                            <div class="text-center">
+                                <p class="text-4xl font-bold gradient-text mb-2">500+</p>
+                                <p class="text-gray-400">Satisfied Clients</p>
+                            </div>
+                            <div class="text-center">
+                                <p class="text-4xl font-bold gradient-text mb-2">30+</p>
+                                <p class="text-gray-400">Countries Served</p>
+                            </div>
+                            <div class="text-center">
+                                <p class="text-4xl font-bold gradient-text mb-2">$50M+</p>
+                                <p class="text-gray-400">Client Revenue Generated</p>
+                            </div>
+                            <div class="text-center">
+                                <p class="text-4xl font-bold gradient-text mb-2">99.9%</p>
+                                <p class="text-gray-400">Satisfaction Rate</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-24 bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl sm:text-5xl font-bold mb-4">Frequently Asked Questions</h2>
+                <p class="text-xl text-gray-400 max-w-2xl mx-auto">
+                    Everything you need to know about our services and solutions
+                </p>
+            </div>
+            
+            <div class="max-w-3xl mx-auto space-y-4">
+                <!-- FAQ Item 1 -->
+                <div class="faq-item bg-gradient-to-r from-gray-800 to-gray-700 rounded-lg border border-purple-500 border-opacity-20">
+                    <div class="faq-question p-6 flex items-center justify-between">
+                        <h3 class="text-lg font-semibold text-white">What makes Dormache Empire different from other digital agencies?</h3>
+                        <i class="faq-icon fas fa-chevron-down text-purple-500"></i>
+                    </div>
+                    <div class="faq-answer hidden px-6 pb-6">
+                        <p class="text-gray-300 leading-relaxed">
+                            Dormache Empire stands out through our unique combination of expertise, innovation, and client-centric approach. We don't just build websites or implement tools—we become strategic partners in your growth journey. Our team brings together world-class developers, AI specialists, and business strategists who work collaboratively to deliver solutions that drive real, measurable results. We're committed to transparency, continuous improvement, and going above and beyond to exceed expectations. Plus, our 99.9% client satisfaction rate speaks for itself.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 2 -->
+                <div class="faq-item bg-gradient-to-r from-gray-800 to-gray-700 rounded-lg border border-purple-500 border-opacity-20">
+                    <div class="faq-question p-6 flex items-center justify-between">
+                        <h3 class="text-lg font-semibold text-white">How long does it typically take to see results from your solutions?</h3>
+                        <i class="faq-icon fas fa-chevron-down text-purple-500"></i>
+                    </div>
+                    <div class="faq-answer hidden px-6 pb-6">
+                        <p class="text-gray-300 leading-relaxed">
+                            Timeline varies based on your specific project and goals, but we typically see measurable improvements within 30-60 days. For custom web development, you'll see your new platform live within 4-12 weeks depending on complexity. AI automation implementations usually show productivity gains within 2-4 weeks. Our average client experiences a 150% ROI within the first year. We provide detailed progress tracking and regular reporting so you can see exactly how your investment is performing.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 3 -->
+                <div class="faq-item bg-gradient-to-r from-gray-800 to-gray-700 rounded-lg border border-purple-500 border-opacity-20">
+                    <div class="faq-question p-6 flex items-center justify-between">
+                        <h3 class="text-lg font-semibold text-white">Do you offer ongoing support and maintenance after project completion?</h3>
+                        <i class="faq-icon fas fa-chevron-down text-purple-500"></i>
+                    </div>
+                    <div class="faq-answer hidden px-6 pb-6">
+                        <p class="text-gray-300 leading-relaxed">
+                            Absolutely! We believe the relationship doesn't end at project launch—it's just beginning. We offer comprehensive maintenance and support packages ranging from basic updates to full managed services. Our support team is available 24/7 to ensure your systems run smoothly. We provide regular security updates, performance optimization, feature enhancements, and strategic guidance to help you continue maximizing your investment. Most of our clients maintain ongoing partnerships with us to stay ahead of technological changes.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 4 -->
+                <div class="faq-item bg-gradient-to-r from-gray-800 to-gray-700 rounded-lg border border-purple-500 border-opacity-20">
+                    <div class="faq-question p-6 flex items-center justify-between">
+                        <h3 class="text-lg font-semibold text-white">How secure are your cloud solutions and how do you protect our data?</h3>
+                        <i class="faq-icon fas fa-chevron-down text-purple-500"></i>
+                    </div>
+                    <div class="faq-answer hidden px-6 pb-6">
+                        <p class="text-gray-300 leading-relaxed">
+                            Security is our top priority. Our cloud infrastructure meets and exceeds industry standards including ISO 27001, SOC 2 Type II, and GDPR compliance. We implement military-grade encryption for data in transit and at rest, multi-factor authentication, regular security audits, and automated threat detection. Your data is backed up redundantly across multiple geographic locations with 99.99% uptime guarantee. We conduct regular penetration testing and security assessments to identify and address potential vulnerabilities proactively. You'll have complete visibility into your data and security measures.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 5 -->
+                <div class="faq-item bg-gradient-to-r from-gray-800 to-gray-700 rounded-lg border border-purple-500 border-opacity-20">
+                    <div class="faq-question p-6 flex items-center justify-between">
+                        <h3 class="text-lg font-semibold text-white">What's the investment range for your services, and do you offer flexible pricing options?</h3>
+                        <i class="faq-icon fas fa-chevron-down text-purple-500"></i>
+                    </div>
+                    <div class="faq-answer hidden px-6 pb-6">
+                        <p class="text-gray-300 leading-relaxed">
+                            Our pricing is flexible and tailored to your budget and requirements. Custom web development projects typically range from $15K to $150K+ depending on complexity and features. AI automation solutions start at $5K monthly for basic implementation and scale up based on usage and complexity. Cloud solutions are priced on a pay-as-you-grow model starting at $500/month. We offer fixed-price projects, monthly retainers, performance-based pricing, and hybrid models. Schedule a consultation with our team to discuss your specific needs and we'll provide a customized proposal that fits your budget.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="py-24 bg-gradient-to-r from-purple-900 to-pink-900 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute -top-40 -right-40 w-80 h-80 bg-white rounded-full mix-blend-multiply filter blur-3xl"></div>
+            <div class="absolute -bottom-40 -left-40 w-80 h-80 bg-white rounded-full mix-blend-multiply filter blur-3xl"></div>
+        </div>
+        
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">Your Empire Awaits</h2>
+            <p class="text-xl text-gray-100 mb-12 max-w-2xl mx-auto leading-relaxed">
+                Don't let your competitors dominate. Take action today and transform your business into a digital powerhouse that leads your market.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <a href="https://dormacheempire.com/contact" class="bg-white text-purple-900 px-10 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition-all duration-300 hover:scale-105">
+                    Get Started Now
+                </a>
+                <p class="text-gray-100">
+                    <i class="fas fa-envelope mr-2"></i>
+                    <a href="mailto:info@dormacheempire.com" class="hover:underline">info@dormacheempire.com</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 border-t border-gray-800 py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-8">
+                <!-- Company Info -->
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="w-10 h-10 bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg flex items-center justify-center">
+                            <i class="fas fa-crown text-white font-bold"></i>
+                        </div>
+                        <span class="text-xl font-bold gradient-text">Dormache Empire</span>
+                    </div>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Building digital empires that dominate. Transform your vision into a digital powerhouse with cutting-edge solutions.
+                    </p>
+                </div>
+                
+                <!-- Services -->
+                <div>
+                    <h3 class="text-white font-bold mb-4">Services</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#features" class="text-gray-400 hover:text-white transition-colors duration-300">Custom Development</a></li>
+                        <li><a href="#features" class="text-gray-400 hover:text-white transition-colors duration-300">AI Automation</a></li>
+                        <li><a href="#features" class="text-gray-400 hover:text-white transition-colors duration-300">Cloud Solutions</a></li>
+                        <li><a href="#features" class="text-gray-400 hover:text-white transition-colors duration-300">Consulting</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Company -->
+                <div>
+                    <h3 class="text-white font-bold mb-4">Company</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition-colors duration-300">About Us</a></li>
+                        <li><a href="#testimonials" class="text-gray-400 hover:text-white transition-colors duration-300">Testimonials</a></li>
+                        <li><a href="blog.html" class="text-gray-400 hover:text-white transition-colors duration-300">Blog</a></li>
+                        <li><a href="https://dormacheempire.com/contact" class="text-gray-400 hover:text-white transition-colors duration-300">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Legal -->
+                <div>
+                    <h3 class="text-white font-bold mb-4">Legal</h3>
+                    <ul class="space-y-2">
+                        <li><a href="privacy.html" class="text-gray-400 hover:text-white transition-colors duration-300">Privacy Policy</a></li>
+                        <li><a href="terms.html" class="text-gray-400 hover:text-white transition-colors duration-300">Terms of Service</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Cookies</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Security</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Social Links -->
+            <div class="border-t border-gray-800 pt-8 mb-8">
+                <div class="flex justify-center space-x-6 mb-6">
+                    <a href="#" class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-purple-500 transition-colors duration-300">
+                        <i class="fab fa-facebook-f text-white"></i>
+                    </a>
+                    <a href="#" class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-purple-500 transition-colors duration-300">
+                        <i class="fab fa-twitter text-white"></i>
+                    </a>
+                    <a href="#" class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-purple-500 transition-colors duration-300">
+                        <i class="fab fa-linkedin-in text-white"></i>
+                    </a>
+                    <a href="#" class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-purple-500 transition-colors duration-300">
+                        <i class="fab fa-instagram text-white"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Copyright -->
+            <div class="border-t border-gray-800 pt-8 text-center">
+                <p class="text-gray-400 text-sm">
+                    &copy; 2025 Dormache Empire. All rights reserved. | Powered by cutting-edge technology and innovation.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mobile Menu Toggle
+            const mobileMenuButton = document.querySelector('header nav .mobile-menu-button');
+            const mobileMenu = document.querySelector('header nav .mobile-menu');
+            
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                    const icon = mobileMenuButton.querySelector('i');
+                    if (icon) {
+                        icon.classList.toggle('fa-bars');
+                        icon.classList.toggle('fa-times');
+                    }
+                });
+
+                const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+                mobileMenuLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                        const icon = mobileMenuButton.querySelector('i');
+                        if (icon) {
+                            icon.classList.remove('fa-times');
+                            icon.classList.add('fa-bars');
+                        }
+                    });
+                });
+            }
+
+            // FAQ Accordion Toggle
+            const faqItems = document.querySelectorAll('.faq-item');
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                if (question) {
+                    question.addEventListener('click', () => {
+                        const answer = item.querySelector('.faq-answer');
+                        const isOpen = !answer.classList.contains('hidden');
+                        
+                        // Close all other FAQ items
+                        faqItems.forEach(otherItem => {
+                            if (otherItem !== item) {
+                                otherItem.querySelector('.faq-answer')?.classList.add('hidden');
+                                otherItem.querySelector('.faq-icon')?.classList.remove('rotate-180');
+                            }
+                        });
+                        
+                        // Toggle current item
+                        answer?.classList.toggle('hidden');
+                        item.querySelector('.faq-icon')?.classList.toggle('rotate-180');
+                    });
+                }
+            });
+
+            // Smooth Scroll for Anchor Links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    const href = this.getAttribute('href');
+                    if (href !== '#' && href.length > 1) {
+                        e.preventDefault();
+                        const target = document.querySelector(href);
+                        if (target) {
+                            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
